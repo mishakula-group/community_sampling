@@ -52,11 +52,9 @@ python -u sample_three_member_community.py \
     --outdir sampling_results \
     --n-samples 5000 \
     --thinning 100 \
-    --batch-size 250
-```
+    --batch-size 250 \
 
-`-u` disables Python output buffering, which is useful when monitoring a
-long run or redirecting the output to a log file.
+```
 
 ### Command-line arguments
 
@@ -78,6 +76,8 @@ long run or redirecting the output to a log file.
   `--batch-size`                                 `250` Number of samples
                                                        written to each
                                                        compressed CSV file
+
+
   --------------------------------------------------------------------------
 
 ## What the script does
@@ -120,6 +120,8 @@ The output directory contains:
                                       and fluxes from the FBA validation,
                                       solver information, and elapsed
                                       time.
+
+
   -----------------------------------------------------------------------
 
 The number of batch files is determined by `n-samples` and `batch-size`.
